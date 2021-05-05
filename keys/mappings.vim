@@ -50,6 +50,13 @@ nnoremap o zzo
 nnoremap <C-w> :Bdelete<CR>
 " <TAB>: completion.
 inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <silent> <expr><C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <silent> <expr><C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
 
 " Better window navigation
 nnoremap <C-h> <C-w>h

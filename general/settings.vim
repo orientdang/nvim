@@ -47,6 +47,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 cmap w!! w !sudo tee %
 set number relativenumber
 
+" set number toggle
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber

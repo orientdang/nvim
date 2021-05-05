@@ -101,6 +101,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'mattn/webapi-vim'
   " Close buffer
   Plug 'moll/vim-bbye'
+  " Better syxtax highlighting
+  Plug 'jaxbot/semantic-highlight.vim'
+
 
   " Plugin Graveyard
 
@@ -134,8 +137,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 call plug#end()
+
 set background=dark
 colorscheme PaperColor
+if (has('termguicolors'))
+  set termguicolors
+endif
 
 " Automatically install missing plugins on startup
 autocmd VimEnter *

@@ -1,7 +1,9 @@
 let g:polyglot_disabled = ['csv']
+set nocompatible
+syntax on
 
 let g:python_highlight_all=1
 
 let g:vim_jsx_pretty_colorful_config = 1
 
-set re=0
+" set re=1
